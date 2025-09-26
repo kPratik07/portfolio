@@ -1,0 +1,123 @@
+nav#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: fixed; /* keep nav fixed and never scroll */
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #1f2937, #4b5563);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.heading-name h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #2dd4bf; /* teal-400 equivalent */
+}
+
+/* Remove the previous hover underline effect */
+.links a::after {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav#navbar {
+    padding: 1rem 2rem;
+  }
+
+  .heading-name h1 {
+    font-size: 1.7rem;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 999;
+  }
+
+  .links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    background: rgba(44, 62, 80, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .links.active {
+    right: 0;
+  }
+
+  .links a {
+    font-size: 1.2rem;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+@media (max-width: 480px) {
+  nav#navbar {
+    padding: 1rem;
+    position: fixed;
+  }
+
+  .heading-name h1 {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    width: 100%;
+  }
+}

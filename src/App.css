@@ -1,0 +1,119 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header/Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #2d2e32;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #147efb;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* About Section */
+.about {
+  margin-top: 80px;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+  color: #767676;
+}
+
+.about h1 {
+  font-size: 3.5rem;
+  color: #2d2e32;
+  margin: 1rem 0;
+}
+
+.about span {
+  color: #147efb;
+}
+
+/* Tech Stacks Section */
+.tech-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d2e32;
+  margin: 3rem 0 1rem;
+}
+
+.techstach-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 5rem 2rem;
+  background: #f9f9f9;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2d2e32;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+  }
+}

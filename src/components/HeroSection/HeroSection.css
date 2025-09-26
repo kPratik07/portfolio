@@ -1,0 +1,157 @@
+/* Hero Section (Header) */
+#header {
+  position: relative;
+  background: #f9fafb;
+  color: #1f2937;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Floating background circles */
+#header::before,
+#header::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  animation: float 12s ease-in-out infinite;
+}
+
+#header::before {
+  top: -50px;
+  left: -50px;
+}
+
+#header::after {
+  bottom: -50px;
+  right: -50px;
+}
+
+.header-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+/* Text styling */
+#header h3 {
+  font-size: 1.5rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+  animation: fadeSlideDown 1.5s ease forwards;
+}
+
+#header h1 {
+  font-size: 4rem;
+  color: #1f2937;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+#header p {
+  font-size: 1.5rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeSlideDown 1.5s ease forwards;
+  animation-delay: 3s;
+}
+
+.highlight {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* Resume button */
+.resume-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideDown 1.5s ease forwards;
+  animation-delay: 3.5s;
+}
+
+.resume-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #header h1 {
+    font-size: 3rem;
+  }
+  #header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    min-height: 72vh;
+    padding: 0;
+  }
+  #header h1 {
+    font-size: 2.5rem;
+  }
+  #header h3 {
+    font-size: 1.2rem;
+  }
+  #header p {
+    font-size: 1.1rem;
+  }
+}
