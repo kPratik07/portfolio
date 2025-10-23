@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -93,14 +103,6 @@ body {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background: #2d2e32;
-  color: #fff;
 }
 
 /* Media Queries */

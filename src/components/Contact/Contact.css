@@ -140,7 +140,7 @@
   background: #ffffff;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  width: 700px;
+  width: 600px;
 }
 
 .contact-form textarea {

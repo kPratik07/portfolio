@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import Carousel from "./Carousel";
 
 interface ProjectType {
   id: number;
@@ -12,6 +13,7 @@ interface ProjectType {
 }
 
 const Projects: React.FC = () => {
+
   const projects: ProjectType[] = [
     {
       id: 1,
@@ -43,57 +45,34 @@ const Projects: React.FC = () => {
       github: "https://github.com/kPratik07/DocuChat-AI",
       demo: "https://docu-chat-ai-jet.vercel.app/",
     },
+    {
+      id: 4,
+      name: "Indian Flag Image Validator",
+      description:
+        "A web application that validates uploaded Indian flag images against official BIS standards, checking aspect ratio, colors, stripe proportions, and Ashoka Chakra details with instant validation reports.",
+      image: "/assets/indian-flag-validator.png",
+      techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
+      github: "https://github.com/kPratik07/indian-flag-validator",
+      demo: "https://indian-flag-validator-m85x.vercel.app/",
+    },
+    {
+      id: 5,
+      name: "Kube Credential System",
+      description:
+        "A microservices-based credential management system deployed on Kubernetes, featuring secure issuance and verification services with real-time validation and comprehensive audit logging.",
+      image: "/assets/kube Credential.png",
+      techStack: ["React", "TypeScript", "Node.js", "Kubernetes", "Microservices"],
+      github: "https://github.com/kPratik07/kube-credential",
+      demo: "https://kube-credential-gold.vercel.app/",
+    },
   ];
+
 
   return (
     <section id="projects" className="projects-section">
       <h1 className="projects-heading">Projects</h1>
       <p className="projects-subtitle">My Recent Projects</p>
-
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <div className="project-image">
-              <img
-                src={`${process.env.PUBLIC_URL}${project.image}`}
-                alt={project.name}
-              />
-            </div>
-
-            <div className="project-content">
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-
-              <div className="project-tech-stack">
-                {project.techStack.map((tech, index) => (
-                  <span key={index} className="tech-tag">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="project-links">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-link"
-                >
-                  <i className="fab fa-github"></i> Code
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="demo-link"
-                >
-                  <i className="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <Carousel projects={projects} />
     </section>
   );
 };

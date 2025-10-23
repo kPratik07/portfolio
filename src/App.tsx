@@ -7,6 +7,7 @@ import TechStacks from "./components/Techstacks/TechStacks";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import HeroSection from "./components/HeroSection/HeroSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,9 +21,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Pratik Raj❤️. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
