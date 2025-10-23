@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/pratik-raj",
+      url: "https://www.linkedin.com/in/pratik-raj-543527214/",
       icon: "fab fa-linkedin",
     },
   ];
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={link.name}
-                    className="social-link"
+                    className={link.name.toLowerCase()}
                   >
                     <i className={link.icon}></i>
                   </a>
