@@ -15,13 +15,13 @@ const Projects: React.FC = () => {
   const projects: ProjectType[] = [
     {
       id: 1,
-      name: "BuildHub",
+      name: "AI Finance Tracker",
       description:
-        "A comprehensive construction project management platform featuring real-time progress tracking, team collaboration tools, and resource management capabilities.",
-      image: "/assets/BuildHub.png",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "Material-UI"],
-      github: "https://github.com/babureddyg2308/BuildHub_Rct104",
-      demo: "https://rctapp-dien.vercel.app/",
+        "An intelligent personal finance management application powered by AI, featuring expense tracking, budget planning, financial insights, and automated categorization of transactions.",
+      image: "/assets/ai-finance-tracker.png",
+      techStack: ["React", "Javascript", "Node.js", "Express", "MongoDB", "Gemini AI"],
+      github: "https://github.com/kPratik07/ai-finance-tracker",
+      demo: "https://ai-finance-tracker-rosy.vercel.app/",
     },
     {
       id: 2,
@@ -35,13 +35,13 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      name: "Vendor-Management-System",
+      name: "DocuChat AI",
       description:
-        "A high-performance vendor management platform for handling large-scale data with a modern, user-friendly interface",
-      image: "/assets/vms.png",
-      techStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "ShadCN UI"],
-      github: "https://github.com/kPratik07/Vendor-Management-System",
-      demo: "https://vendor-management-system-5ptv.vercel.app/",
+        "An AI-powered document chat application that allows users to upload documents and have intelligent conversations with their content using advanced natural language processing.",
+      image: "/assets/document-chat-ai.png",
+      techStack: ["React", "Javascript", "Node.js", "Groq AI", "PDF.js", "Tailwind CSS"],
+      github: "https://github.com/kPratik07/DocuChat-AI",
+      demo: "https://docu-chat-ai-jet.vercel.app/",
     },
   ];
 
