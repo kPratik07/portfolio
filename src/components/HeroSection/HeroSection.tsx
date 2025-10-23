@@ -13,7 +13,7 @@ const About: React.FC = () => {
         <h3>Hey there! I'm</h3>
         <h1>Pratik Raj</h1>
         <p>
-          And I'm a <span className="highlight">Full Stack Web Developer!</span>
+          And I'm a <span className="hero-highlight">Full Stack Web Developer!</span>
         </p>
         <button
           className="resume-btn"
