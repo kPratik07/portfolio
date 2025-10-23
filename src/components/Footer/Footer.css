@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: #e4e4e4;
   position: relative;
   overflow: hidden;
@@ -115,27 +115,42 @@
 }
 
 .social-links a {
-  font-size: 1.6rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
   text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* GitHub Custom Color */
 .social-links a.github {
-  color: #e4e4e4;
+  background: rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .social-links a.github:hover {
+  background: rgba(255, 255, 255, 0.3);
   color: #ffffff;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* LinkedIn Custom Color */
 .social-links a.linkedin {
-  color: #e4e4e4;
+  background: rgba(255, 255, 255, 0.2);
+  color: #60a5fa;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .social-links a.linkedin:hover {
-  color: #0a66c2;
-  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.3);
+  color: #93c5fd;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
 }
 
 /* Divider */

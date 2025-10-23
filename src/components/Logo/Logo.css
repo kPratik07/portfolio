@@ -1,0 +1,123 @@
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.logo-letter {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.3s ease;
+}
+
+.logo-letter.logo-p {
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+.logo-letter.logo-r {
+  animation: slideInRight 0.6s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+/* Size Variants */
+.logo-container.small .logo {
+  font-size: 1.5rem;
+}
+
+.logo-container.small .logo-dot {
+  width: 6px;
+  height: 6px;
+}
+
+.logo-container.medium .logo {
+  font-size: 2rem;
+}
+
+.logo-container.medium .logo-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.logo-container.large .logo {
+  font-size: 2.5rem;
+}
+
+.logo-container.large .logo-dot {
+  width: 10px;
+  height: 10px;
+}
+
+/* Hover Effect */
+.logo-container:hover .logo-letter {
+  transform: scale(1.1);
+}
+
+.logo-container:hover .logo-dot {
+  animation: pulse 0.6s ease infinite;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}

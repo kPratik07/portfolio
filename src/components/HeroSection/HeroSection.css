@@ -120,7 +120,7 @@
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto 1rem;
-  animation: typing 2.5s steps(20, end) forwards;
+  animation: typing 5s steps(40, end) forwards;
 }
 
 #header p {

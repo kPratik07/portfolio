@@ -104,24 +104,37 @@
 }
 
 .social-links a {
-  font-size: 1.6rem;
-  transition: transform 0.3s ease;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 1 !important;
 }
 
 /* GitHub Custom Color */
 .social-links a.github {
-  color: #373737;
+  color: #000000 !important;
+  font-weight: 900;
 }
 .social-links a.github:hover {
-  color: #000000;
+  color: #333333 !important;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-links a.github i {
+  color: #000000 !important;
 }
 
 /* LinkedIn Custom Color */
 .social-links a.linkedin {
-  color: #3972ce; /* neutral dark gray */
+  color: #0077b5 !important;
+  font-weight: 900;
 }
 .social-links a.linkedin:hover {
-  color: #0a66c2; /* LinkedIn blue only on hover */
+  color: #005885 !important;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-links a.linkedin i {
+  color: #0077b5 !important;
 }
 
 /* ---------- Right Side Form ---------- */

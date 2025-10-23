@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <nav id="navbar">
       <div className="heading-name">
-        <h1>Pratik Raj</h1>
+        <img src="/portfolio-logo.svg" alt="Pratik Raj Logo" className="logo-img" />
       </div>
       <div className={`links ${isMenuOpen ? "active" : ""}`}>
         <a href="/">Home</a>
