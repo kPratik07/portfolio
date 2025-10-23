@@ -16,21 +16,15 @@ const About: React.FC = () => {
             <span className="highlight">Full stack web Developer!</span>
           </h3>
           <p>
-            I completed my B.Tech. in Electrical and Electronics Engineering
-            (2019) from IEM Kolkata. I worked as an Associate Software Developer
-            at Masai School, where I built multiple IIT pages, migrated the
-            Masai main website to Astro, and developed the “Hire From Us” page
-            along with scalable dashboards and internal tools. I have experience
-            migrating applications using React, Svelte, Astro, Tailwind, and
-            TypeScript, integrated with Node.js, Express, REST APIs, MongoDB,
-            and MySQL. I have also deployed personal full-stack projects on
-            Vercel, Netlify, and Render, gaining hands-on experience in
-            end-to-end development and deployment. Additionally, I am
-            comfortable with AI-powered tools like Cursor, GitHub Copilot,
-            Windsurf, and Zed for AI-assisted coding and collaboration, which
-            help me boost quality and speed. I enjoy solving complex problems,
-            crafting seamless user experiences, and collaborating in Agile teams
-            to deliver impactful solutions.
+            I hold a B.Tech. in Electrical and Electronics Engineering (2019) from IEM Kolkata. 
+            As an Associate Software Developer at Masai School, I built multiple IIT pages, 
+            migrated the main website to Astro, and developed scalable dashboards with internal tools. 
+            I specialize in React, TypeScript, Node.js, Express, and modern frameworks like Svelte 
+            and Astro, with expertise in MongoDB, MySQL, and REST APIs. I've deployed full-stack 
+            projects on Vercel, Netlify, and Render, gaining hands-on experience in end-to-end 
+            development. I leverage AI-powered tools like Cursor, GitHub Copilot, and Windsurf to boost 
+            productivity. Passionate about solving complex problems and crafting seamless user 
+            experiences, I thrive in Agile teams delivering impactful solutions.
           </p>
         </div>
 
