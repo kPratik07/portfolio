@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       name: "Kube Credential System",
       description:
         "A microservices-based credential management system deployed on Kubernetes, featuring secure issuance and verification services with real-time validation and comprehensive audit logging.",
-      image: "/assets/kube-Credential.png",
+      image: "/assets/Kube-Credential.png",
       techStack: ["React", "TypeScript", "Node.js", "Kubernetes", "Microservices"],
       github: "https://github.com/kPratik07/kube-credential",
       demo: "https://kube-credential-gold.vercel.app/",
