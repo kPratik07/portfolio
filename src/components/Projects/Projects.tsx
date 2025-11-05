@@ -65,6 +65,16 @@ const Projects: React.FC = () => {
       github: "https://github.com/kPratik07/kube-credential",
       demo: "https://kube-credential-gold.vercel.app/",
     },
+    {
+      id: 6,
+      name: "HR Dashboard",
+      description:
+        "A comprehensive employee management system with secure authentication, role-based access control, employee CRUD operations, and real-time analytics with salary analysis and hiring trends.",
+      image: "/assets/hr-dashboard.png",
+      techStack: ["Next.js 14", "React 19", "Tailwind CSS", "NextAuth.js", "Prisma", "MongoDB", "Chart.js"],
+      github: "https://github.com/kPratik07/hr-dashboard",
+      demo: "https://hr-dashboard-rose-three.vercel.app/",
+    },
   ];
 
 
