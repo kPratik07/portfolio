@@ -33,7 +33,7 @@ const About: React.FC = () => {
 
         <div className="about-image">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/pratik's_photo.png`}
+            src={`${process.env.PUBLIC_URL}/assets/pratikphoto.png`}
             alt="Pratik Raj"
           />
         </div>
