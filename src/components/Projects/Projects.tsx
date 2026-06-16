@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       image: "/assets/ai-finance-tracker.png",
       techStack: ["React", "Javascript", "Node.js", "Express", "MongoDB", "Gemini AI"],
       github: "https://github.com/kPratik07/ai-finance-tracker",
-      demo: "https://ai-finance-tracker-rosy.vercel.app/",
+      demo: "https://ai-finance-tracker-6jjb.vercel.app/",
     },
     {
       id: 2,
