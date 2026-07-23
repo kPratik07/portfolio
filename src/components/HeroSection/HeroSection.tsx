@@ -19,7 +19,7 @@ const About: React.FC = () => {
           className="resume-btn"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/16qFR_aAHPTwnrBpVHBahFJdv7zum2lNx/view?usp=drive_link",
+              "https://drive.google.com/file/d/1S1GlFkU45pBrbxt7rsOe3NemmIrU_3V8/view?usp=drive_link",
               "_blank"
             )
           }

@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a
-          href="https://drive.google.com/file/d/16qFR_aAHPTwnrBpVHBahFJdv7zum2lNx/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1S1GlFkU45pBrbxt7rsOe3NemmIrU_3V8/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
