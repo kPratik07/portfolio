@@ -13,7 +13,6 @@ interface ProjectType {
 }
 
 const Projects: React.FC = () => {
-
   const projects: ProjectType[] = [
     {
       id: 1,
@@ -21,7 +20,14 @@ const Projects: React.FC = () => {
       description:
         "An intelligent personal finance management application powered by AI, featuring expense tracking, budget planning, financial insights, and automated categorization of transactions.",
       image: "/assets/ai-finance-tracker.png",
-      techStack: ["React", "Javascript", "Node.js", "Express", "MongoDB", "Gemini AI"],
+      techStack: [
+        "React",
+        "Javascript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Gemini AI",
+      ],
       github: "https://github.com/kPratik07/ai-finance-tracker",
       demo: "https://ai-finance-tracker-6jjb.vercel.app/",
     },
@@ -41,42 +47,46 @@ const Projects: React.FC = () => {
       description:
         "An AI-powered document chat application that allows users to upload documents and have intelligent conversations with their content using advanced natural language processing.",
       image: "/assets/document-chat-ai.png",
-      techStack: ["React", "Javascript", "Node.js", "Groq AI", "PDF.js", "Tailwind CSS"],
+      techStack: [
+        "React",
+        "Javascript",
+        "Node.js",
+        "Groq AI",
+        "PDF.js",
+        "Tailwind CSS",
+      ],
       github: "https://github.com/kPratik07/DocuChat-AI",
       demo: "https://docu-chat-ai-jet.vercel.app/",
     },
     {
       id: 4,
-      name: "Indian Flag Image Validator",
+      name: "Attendance Monitoring App",
       description:
-        "A web application that validates uploaded Indian flag images against official BIS standards, checking aspect ratio, colors, stripe proportions, and Ashoka Chakra details with instant validation reports.",
-      image: "/assets/indian-flag-validator.png",
+        "A full-stack campus attendance platform designed for students and staff, featuring secure JWT authentication, geofenced check-ins, role-based dashboards, real-time alerts, and notification tracking to streamline attendance management and improve campus accountability.",
+      image: "/assets/Attendence-monitoring-app.png",
       techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
-      github: "https://github.com/kPratik07/indian-flag-validator",
-      demo: "https://indian-flag-validator-m85x.vercel.app/",
+      github: "https://github.com/kPratik07/Attendance-Monitoring-App",
+      demo: "https://attendance-monitoring-app-frontend.vercel.app/",
     },
     {
       id: 5,
-      name: "Kube Credential System",
-      description:
-        "A microservices-based credential management system deployed on Kubernetes, featuring secure issuance and verification services with real-time validation and comprehensive audit logging.",
-      image: "/assets/Kube-Credential.png",
-      techStack: ["React", "TypeScript", "Node.js", "Kubernetes", "Microservices"],
-      github: "https://github.com/kPratik07/kube-credential",
-      demo: "https://kube-credential-gold.vercel.app/",
-    },
-    {
-      id: 6,
       name: "HR Dashboard",
       description:
         "A comprehensive employee management system with secure authentication, role-based access control, employee CRUD operations, and real-time analytics with salary analysis and hiring trends.",
       image: "/assets/hr-dashboard.png",
-      techStack: ["Next.js 14", "React 19", "Tailwind CSS", "NextAuth.js", "Prisma", "MongoDB", "Chart.js"],
+      techStack: [
+        "Next.js 14",
+        "React 19",
+        "Tailwind CSS",
+        "NextAuth.js",
+        "Prisma",
+        "MongoDB",
+        "Chart.js",
+      ],
       github: "https://github.com/kPratik07/hr-dashboard",
       demo: "https://hr-dashboard-rose-three.vercel.app/",
     },
   ];
-
 
   return (
     <section id="projects" className="projects-section">

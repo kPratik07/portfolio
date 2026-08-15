@@ -16,24 +16,26 @@ const About: React.FC = () => {
             <span className="highlight">Full stack web Developer!</span>
           </h3>
           <p>
-            I hold a B.Tech. in Electrical and Electronics Engineering (2019)
-            from IEM Kolkata. As an Associate Software Developer at Masai
-            School, I built multiple IIT pages, migrated the main website to
-            Astro, and developed scalable dashboards with internal tools. I
-            specialize in React, TypeScript, Node.js, Express, and modern
-            frameworks like Svelte and Astro, with expertise in MongoDB, MySQL,
-            and REST APIs. I've deployed full-stack projects on Vercel, Netlify,
-            and Render, gaining hands-on experience in end-to-end development. I
-            leverage AI-powered tools like Cursor, GitHub Copilot, and Windsurf
-            to boost productivity. Passionate about solving complex problems and
-            crafting seamless user experiences, I thrive in Agile teams
-            delivering impactful solutions.
+            I’m a Software Engineer with 2 years of professional experience
+            building scalable, production-ready web applications. Currently at
+            CipherSchools, I’ve developed 15+ React and TypeScript features,
+            built 10+ reusable React components, and mentored 500+ developers
+            through live coding sessions and frontend workshops. Previously at
+            Masai School, I migrated 10+ production pages, improving load speed
+            by 35%, and developed analytics dashboards that reduced manual
+            reporting time by 50%. My core expertise includes React, TypeScript,
+            JavaScript, Node.js, Express, MongoDB, MySQL, and REST APIs, with
+            hands-on experience in Svelte, AWS, and modern deployment platforms.
+            I also leverage Cursor, GitHub Copilot, and Windsurf to improve
+            development productivity. Passionate about solving complex problems,
+            building intuitive user experiences, and delivering impactful
+            products in Agile environments.
           </p>
         </div>
 
         <div className="about-image">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/pratikphoto.png`}
+            src={`${process.env.PUBLIC_URL}/assets/Passport_photo.jpg`}
             alt="Pratik Raj"
           />
         </div>
