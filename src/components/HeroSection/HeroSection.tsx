@@ -13,14 +13,15 @@ const About: React.FC = () => {
         <h3>Hey there! I'm</h3>
         <h1>Pratik Raj</h1>
         <p>
-          And I'm a <span className="hero-highlight">Full Stack Web Developer!</span>
+          And I'm a{" "}
+          <span className="hero-highlight">Full Stack Web Developer!</span>
         </p>
         <button
           className="resume-btn"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1S1GlFkU45pBrbxt7rsOe3NemmIrU_3V8/view?usp=drive_link",
-              "_blank"
+              "https://drive.google.com/file/d/1N0Sqyk26P4vRvonURpi4oW0cubv6Z_jJ/view?usp=drive_link",
+              "_blank",
             )
           }
         >

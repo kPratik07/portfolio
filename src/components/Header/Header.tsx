@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a
-          href="https://drive.google.com/file/d/1S1GlFkU45pBrbxt7rsOe3NemmIrU_3V8/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1N0Sqyk26P4vRvonURpi4oW0cubv6Z_jJ/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,4 +38,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
