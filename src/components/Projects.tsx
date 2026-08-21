@@ -1,5 +1,4 @@
 import React from "react";
-import "./Projects.css";
 import Carousel from "./Carousel";
 
 interface ProjectType {
@@ -33,13 +32,13 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      name: "Knowledge Knook",
+      name: "Attendance Monitoring App",
       description:
-        "An interactive e-learning platform connecting students with educators, featuring live sessions, course management, and progress tracking.",
-      image: "/assets/Knowledge_Knook.png",
-      techStack: ["React", "TypeScript", "Node.js", "MongoDB", "Socket.io"],
-      github: "https://github.com/kPratik07/LG-Legends_053-NEM104-",
-      demo: "https://lg-legends-053-nem-104.vercel.app/",
+        "A full-stack campus attendance platform with secure authentication, geofenced check-ins, role-based dashboards, real-time alerts, and notification tracking.",
+      image: "/assets/Attendence-monitoring-app.png",
+      techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
+      github: "https://github.com/kPratik07/Attendance-Monitoring-App",
+      demo: "https://attendance-monitoring-app-frontend.vercel.app/",
     },
     {
       id: 3,
@@ -89,10 +88,41 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section">
-      <h1 className="projects-heading">Projects</h1>
-      <p className="projects-subtitle">My Recent Projects</p>
-      <Carousel projects={projects} />
+    <section
+      id="projects"
+      className="relative isolate min-h-screen scroll-mt-0 overflow-hidden bg-gradient-to-b from-white via-[#fcfcff] to-[#f7f4ff] px-5 pb-4 pt-8 sm:px-8 sm:pb-6 sm:pt-12 lg:min-h-screen lg:px-14 lg:pb-3 lg:pt-12"
+    >
+      <div className="pointer-events-none absolute left-7 top-8 h-16 w-16 opacity-45 [background-image:radial-gradient(#c4b5fd_1px,transparent_1px)] [background-size:9px_9px]" />
+      <div className="pointer-events-none absolute right-[5%] top-10 h-[360px] w-[360px] rounded-full border border-violet-200/35" />
+      <div className="relative z-10 mx-auto max-w-[1000px]">
+        <header className="mb-3 text-center sm:mb-4">
+          <h1 className="text-3xl font-bold tracking-[-0.04em] text-slate-950 [text-shadow:0_2px_0_rgba(124,58,237,0.05)] sm:text-5xl">
+            Projects
+          </h1>
+          <div className="mx-auto mt-2 flex max-w-[520px] items-center justify-center gap-3 text-sm text-slate-600">
+            <span className="h-px flex-1 bg-violet-200" />
+            <span className="h-2 w-2 rounded-full bg-violet-400" />
+            <span className="whitespace-nowrap text-violet-600">
+              My Recent Projects
+            </span>
+            <span className="h-2 w-2 rounded-full bg-violet-400" />
+            <span className="h-px flex-1 bg-violet-200" />
+          </div>
+          <p className="mx-auto mt-2 max-w-[610px] text-xs leading-5 text-slate-600 sm:text-sm">
+            Building impactful projects that solve real-world problems with
+            technology.
+          </p>
+        </header>
+        <Carousel projects={projects} />
+        <a
+          href="https://github.com/kPratik07?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mx-auto mt-3 flex w-fit items-center gap-2 rounded-lg border border-violet-300 bg-white px-5 py-2 text-xs font-semibold text-violet-600 shadow-[0_6px_16px_rgba(91,75,160,0.10)] transition hover:bg-violet-50"
+        >
+          View More Projects <span aria-hidden="true">→</span>
+        </a>
+      </div>
     </section>
   );
 };

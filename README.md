@@ -1,77 +1,81 @@
-# 🌐 My Portfolio
+# Pratik Raj | Portfolio
 
-**Hey There! 👋**  
-Welcome to my portfolio! This project showcases my skills and projects as a web developer. It features a modern design and includes several examples of my work.
+A responsive personal portfolio built with React and TypeScript. It presents my experience, skills, technology stack, selected projects, and contact details in a polished single-page layout.
 
----
+## Features
 
-## ✨ Features
+- Responsive navigation with smooth scrolling to every section
+- Hero section with profile summary, code card, stats, and technology highlights
+- About section with portrait card and professional highlights
+- Skills and technology stack sections with responsive cards
+- Project cards with screenshots, technology tags, GitHub links, and live demos
+- Contact form connected to Formspree
+- Client-side validation for required fields and email format
+- Protection against common disposable email domains
+- Responsive footer with profile image, navigation links, social links, and back-to-top control
+- Custom favicon and portfolio branding using the logo asset in `public/assets`
 
-- 🎨 **Modern UI**: Built with React and TypeScript for scalability and maintainability.
-- 🎭 **Clean Styling**: Custom styling using plain CSS (no frameworks).
-- ⚡ **Interactive Elements**: Smooth animations, navbar scroll effects, and form handling.
-- 📩 **Contact Form**: Integrated with Formspree for direct communication.
-- 📱 **Responsive Layout**: Optimized for desktops, tablets, and mobile devices.
-- ☁️ **Deployed on Vercel**: Fast and reliable hosting with automatic builds.
+## Tech Stack
 
----
+- React 19
+- TypeScript
+- Tailwind CSS
+- Create React App / `react-scripts`
+- Font Awesome
+- Formspree
 
-## 🛠 Tech Stack
+## Project Structure
 
-- ⚛️ **React** (Frontend framework)
-- 🟦 **TypeScript** (Type-safe development)
-- 🎨 **CSS3** (Custom styling)
-- ⭐ **Font Awesome** (Icons & social links)
-- 📩 **Formspree** (Contact form handling)
-- ▲ **Vercel** (Deployment & hosting)
+```text
+portfolio/
+├── public/
+│   ├── assets/
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Carousel.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   └── TechStacks.tsx
+│   ├── App.tsx
+│   ├── index.css
+│   └── index.tsx
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json
+```
 
----
+## Getting Started
 
-## 📂 Folder Structure
+Install dependencies:
 
 ```bash
-my-portfolio/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── styles/
-│   ├── App.tsx
-│   ├── index.tsx
-│   ├── react-app-env.d.ts
-│   └── ...other files
-├── package.json
-├── tsconfig.json
-├── README.md
-└── vercel.json
-```
-
-🛠 Getting Started
-
-Follow these steps to run the project locally:
-
-1️⃣ Clone the repository
-
-git clone https://github.com/yourusername/my-portfolio.git
-cd my-portfolio
-
-2️⃣ Install dependencies
-
 npm install
+```
 
-3️⃣ Run the development server
+Start the development server:
 
+```bash
 npm start
+```
 
-4️⃣ Build for production
+Create a production build:
 
+```bash
 npm run build
-
 ```
-💌 Contact Form
 
-You can connect with me through the Contact Section.
+## Contact Form
 
-<form action="https://formspree.io/f/xvgpkbeo" method="POST"></form>
+The contact form submits to Formspree after the visitor completes all required fields. The email field checks format and rejects common disposable email domains before submission.
 
-```
+## Links
+
+- GitHub: https://github.com/kPratik07
+- LinkedIn: https://www.linkedin.com/in/pratik-raj-dev07/

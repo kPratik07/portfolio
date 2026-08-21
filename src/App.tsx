@@ -1,18 +1,17 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import TechStacks from "./components/Techstacks/TechStacks";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import HeroSection from "./components/HeroSection/HeroSection";
-import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import TechStacks from "./components/TechStacks";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <main>
         <HeroSection />
         <About />
