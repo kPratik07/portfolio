@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
               Let's <span className="text-violet-600">Connect</span>
             </h2>
             <div className="mb-4 h-0.5 w-6 bg-violet-600" />
-            <p className="mb-4 text-[10px] leading-4 text-slate-600">
+            <p className="mb-4 text-[11px] leading-4 text-slate-600">
               Let’s connect and create something amazing together,
               <br /> whether it’s big or small, for mobile or web.
               <br />

@@ -98,7 +98,7 @@ const TechStacks: React.FC = () => {
           {technologies.map((tech) => (
             <article
               key={tech.name}
-              className="flex min-h-[164px] flex-col items-center rounded-xl border border-white bg-white/65 px-2.5 py-2 text-center shadow-[0_10px_25px_rgba(91,75,160,0.08)] transition-transform duration-300 hover:-translate-y-1"
+              className="flex  min-h-[164px] flex-col items-center rounded-xl border border-white bg-white/65 px-2.5 py-2 text-center shadow-[0_10px_25px_rgba(91,75,160,0.08)] transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="relative isolate flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-violet-100 bg-white p-1 shadow-[0_5px_15px_rgba(91,75,160,0.09)]">
                 {tech.name === "TypeScript" ? (
@@ -140,7 +140,7 @@ const TechStacks: React.FC = () => {
                 {tech.name}
               </h2>
               <span className="mt-1 h-0.5 w-5 bg-violet-600" />
-              <p className="mt-1 text-[10px] leading-[1.35] text-slate-700">
+              <p className="mt-1 text-[11px] leading-[1.35] text-slate-700">
                 {descriptions[tech.name]}
               </p>
             </article>

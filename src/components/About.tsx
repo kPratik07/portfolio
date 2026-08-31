@@ -29,7 +29,7 @@ const About: React.FC = () => {
 
         <div className="grid flex-1 items-start gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(280px,0.75fr)] lg:gap-20">
           <div className="pt-1 lg:pt-3">
-            <span className="inline-flex rounded-md bg-violet-100 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-violet-600">
+            <span className="inline-flex rounded-md bg-violet-100 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.12em] text-violet-600">
               Who I am
             </span>
             <h3 className="mt-5 max-w-[700px] text-2xl font-bold leading-tight tracking-[-0.025em] text-slate-950 sm:text-3xl lg:text-[2.35rem]">
@@ -38,12 +38,12 @@ const About: React.FC = () => {
                 Software Engineer
               </span>
             </h3>
-            <p className="mt-3 max-w-[680px] text-sm leading-6 text-slate-600">
+            <p className="mt-3 max-w-[680px] text-md md:text-[14px] leading-6 text-slate-600">
               I&apos;m a Software Engineer with 2 years of experience building
               scalable, production-ready web applications.
             </p>
             <div className="my-5 h-0.5 w-8 bg-violet-600" />
-            <div className="max-w-[700px] space-y-3 text-xs leading-5 text-slate-600 sm:text-[13px]">
+            <div className="max-w-[700px] space-y-3 text-md md:text-[14px] leading-5 text-slate-600 sm:text-[13px]">
               <p>
                 Currently at CipherSchools, I&apos;ve built 15+ React and
                 TypeScript features, developed 10+ reusable components, and

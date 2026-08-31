@@ -32,20 +32,10 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      name: "Attendance Monitoring App",
-      description:
-        "A full-stack campus attendance platform with secure authentication, geofenced check-ins, role-based dashboards, real-time alerts, and notification tracking.",
-      image: "/assets/Attendence-monitoring-app.png",
-      techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
-      github: "https://github.com/kPratik07/Attendance-Monitoring-App",
-      demo: "https://attendance-monitoring-app-frontend.vercel.app/",
-    },
-    {
-      id: 3,
       name: "DocuChat AI",
       description:
         "An AI-powered document chat application that allows users to upload documents and have intelligent conversations with their content using advanced natural language processing.",
-      image: "/assets/document-chat-ai.png",
+      image: "/assets/DocuChat-AI.png",
       techStack: [
         "React",
         "Javascript",
@@ -58,32 +48,14 @@ const Projects: React.FC = () => {
       demo: "https://docu-chat-ai-jet.vercel.app/",
     },
     {
-      id: 4,
-      name: "Attendance Monitoring App",
+      id: 3,
+      name: "Knowledge Knook",
       description:
-        "A full-stack campus attendance platform designed for students and staff, featuring secure JWT authentication, geofenced check-ins, role-based dashboards, real-time alerts, and notification tracking to streamline attendance management and improve campus accountability.",
-      image: "/assets/Attendence-monitoring-app.png",
-      techStack: ["React", "Node.js", "Express", "Tailwind CSS"],
-      github: "https://github.com/kPratik07/Attendance-Monitoring-App",
-      demo: "https://attendance-monitoring-app-frontend.vercel.app/",
-    },
-    {
-      id: 5,
-      name: "HR Dashboard",
-      description:
-        "A comprehensive employee management system with secure authentication, role-based access control, employee CRUD operations, and real-time analytics with salary analysis and hiring trends.",
-      image: "/assets/hr-dashboard.png",
-      techStack: [
-        "Next.js 14",
-        "React 19",
-        "Tailwind CSS",
-        "NextAuth.js",
-        "Prisma",
-        "MongoDB",
-        "Chart.js",
-      ],
-      github: "https://github.com/kPratik07/hr-dashboard",
-      demo: "https://hr-dashboard-rose-three.vercel.app/",
+        "A modern learning and knowledge platform focused on organizing study material, notes, and resources in a clean digital space with searchable, structured content discovery.",
+      image: "/assets/knowledge-knook.png",
+      techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "AI"],
+      github: "https://github.com/kPratik07/knowledge-knook",
+      demo: "https://knowledge-knook.vercel.app/",
     },
   ];
 

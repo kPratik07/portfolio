@@ -176,7 +176,7 @@ const Skills: React.FC = () => {
                 {skill.title}
               </h2>
               <span className="mt-1.5 h-0.5 w-5 bg-violet-600" />
-              <p className="mt-2 max-w-[210px] text-[11px] leading-4 text-slate-700">
+              <p className="mt-2 max-w-[210px] text-[12px] leading-4 text-slate-700">
                 {skill.description}
               </p>
             </article>
