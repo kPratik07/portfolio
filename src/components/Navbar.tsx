@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
           Contact
         </a>
         <a
-          href="https://drive.google.com/file/d/1LnAzqYFrliQ4OcU_GYLA7iFluJVvHffA/view?usp=drive_link"
+          href="https://drive.google.com/file/d/16A9cpy-ajPN6_7e6l3FHAntUFmulFCTu/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-md border border-violet-500 px-3.5 py-2 text-[11px] font-semibold text-violet-600 shadow-sm shadow-violet-100 transition hover:bg-violet-50 sm:text-xs"
